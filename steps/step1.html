@@ -2,10 +2,59 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Methodological Steps - Semantic Web Project</title>
     <link rel="stylesheet" href="../style.css">
+    <style>
+        .gallery-box {
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            padding: 15px;
+            margin: 20px 0 35px 0;
+        }
+        .image-scroll-grid {
+            display: flex;
+            gap: 15px;
+            overflow-x: auto;
+            padding-bottom: 15px;
+            scroll-behavior: smooth;
+        }
+        .image-scroll-grid::-webkit-scrollbar {
+            height: 10px;
+        }
+        .image-scroll-grid::-webkit-scrollbar-track {
+            background: #eee;
+            border-radius: 5px;
+        }
+        .image-scroll-grid::-webkit-scrollbar-thumb {
+            background: #1abc9c;
+            border-radius: 5px;
+        }
+        .grid-item {
+            flex: 0 0 320px;
+            text-align: center;
+            background: #fff;
+            padding: 8px;
+            border: 1px solid #eee;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+        }
+        .grid-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 2px;
+        }
+        .grid-item p {
+            font-size: 0.8rem;
+            color: #7f8c8d;
+            margin-top: 5px;
+            font-style: italic;
+        }
+    </style>
 </head>
 <body>
+
     <header>
         <nav class="navbar">
             <ul>
@@ -17,18 +66,67 @@
             </ul>
         </nav>
     </header>
+    
     <main class="container">
         <section class="card">
             <h2>Methodological Steps</h2>
-            <h3>SPARQL Queries & Prompts</h3>
-            <p>Below is our primary extraction execution block:</p>
-            <pre style="background:#eef; padding:15px; border-radius:5px; overflow-x:auto;"><code>SELECT ?item ?itemLabel WHERE {
-  ?item wdt:P31 wd:Q5 .
-  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
-} LIMIT 10</code></pre>
+            
+            <h3>Project Workflow Screenshots</h3>
+            <p>Scroll horizontally to view our complete timeline of 38 procedural data extractions and prompt executions:</p>
+            
+            <div class="gallery-box">
+                <div class="image-scroll-grid">
+                    <div class="grid-item"><img src="gallery/1.png" alt="Step 1"><p>Screenshot 1</p></div>
+                    <div class="grid-item"><img src="gallery/2.png" alt="Step 2"><p>Screenshot 2</p></div>
+                    <div class="grid-item"><img src="gallery/3.png" alt="Step 3"><p>Screenshot 3</p></div>
+                    <div class="grid-item"><img src="gallery/4.png" alt="Step 4"><p>Screenshot 4</p></div>
+                    <div class="grid-item"><img src="gallery/5.png" alt="Step 5"><p>Screenshot 5</p></div>
+                    <div class="grid-item"><img src="gallery/6.png" alt="Step 6"><p>Screenshot 6</p></div>
+                    <div class="grid-item"><img src="gallery/7.png" alt="Step 7"><p>Screenshot 7</p></div>
+                    <div class="grid-item"><img src="gallery/8.png" alt="Step 8"><p>Screenshot 8</p></div>
+                    <div class="grid-item"><img src="gallery/9.png" alt="Step 9"><p>Screenshot 9</p></div>
+                    <div class="grid-item"><img src="gallery/10.png" alt="Step 10"><p>Screenshot 10</p></div>
+                    <div class="grid-item"><img src="gallery/11.png" alt="Step 11"><p>Screenshot 11</p></div>
+                    <div class="grid-item"><img src="gallery/12.png" alt="Step 12"><p>Screenshot 12</p></div>
+                    <div class="grid-item"><img src="gallery/13.png" alt="Step 13"><p>Screenshot 13</p></div>
+                    <div class="grid-item"><img src="gallery/14.png" alt="Step 14"><p>Screenshot 14</p></div>
+                    <div class="grid-item"><img src="gallery/15.png" alt="Step 15"><p>Screenshot 15</p></div>
+                    <div class="grid-item"><img src="gallery/16.png" alt="Step 16"><p>Screenshot 16</p></div>
+                    <div class="grid-item"><img src="gallery/17.png" alt="Step 17"><p>Screenshot 17</p></div>
+                    <div class="grid-item"><img src="gallery/18.png" alt="Step 18"><p>Screenshot 18</p></div>
+                    <div class="grid-item"><img src="gallery/19.png" alt="Step 19"><p>Screenshot 19</p></div>
+                    <div class="grid-item"><img src="gallery/20.png" alt="Step 20"><p>Screenshot 20</p></div>
+                    <div class="grid-item"><img src="gallery/21.png" alt="Step 21"><p>Screenshot 21</p></div>
+                    <div class="grid-item"><img src="gallery/22.png" alt="Step 22"><p>Screenshot 22</p></div>
+                    <div class="grid-item"><img src="gallery/23.png" alt="Step 23"><p>Screenshot 23</p></div>
+                    <div class="grid-item"><img src="gallery/24.png" alt="Step 24"><p>Screenshot 24</p></div>
+                    <div class="grid-item"><img src="gallery/25.png" alt="Step 25"><p>Screenshot 25</p></div>
+                    <div class="grid-item"><img src="gallery/26.png" alt="Step 26"><p>Screenshot 26</p></div>
+                    <div class="grid-item"><img src="gallery/27.png" alt="Step 27"><p>Screenshot 27</p></div>
+                    <div class="grid-item"><img src="gallery/28.png" alt="Step 28"><p>Screenshot 28</p></div>
+                    <div class="grid-item"><img src="gallery/29.png" alt="Step 29"><p>Screenshot 29</p></div>
+                    <div class="grid-item"><img src="gallery/30.png" alt="Step 30"><p>Screenshot 30</p></div>
+                    <div class="grid-item"><img src="gallery/31.png" alt="Step 31"><p>Screenshot 31</p></div>
+                    <div class="grid-item"><img src="gallery/32.png" alt="Step 32"><p>Screenshot 32</p></div>
+                    <div class="grid-item"><img src="gallery/33.png" alt="Step 33"><p>Screenshot 33</p></div>
+                    <div class="grid-item"><img src="gallery/34.png" alt="Step 34"><p>Screenshot 34</p></div>
+                    <div class="grid-item"><img src="gallery/35.png" alt="Step 35"><p>Screenshot 35</p></div>
+                    <div class="grid-item"><img src="gallery/36.png" alt="Step 36"><p>Screenshot 36</p></div>
+                    <div class="grid-item"><img src="gallery/37.png" alt="Step 37"><p>Screenshot 37</p></div>
+                    <div class="grid-item"><img src="gallery/38.png" alt="Step 38"><p>Screenshot 38</p></div>
+                </div>
+            </div>
+
             <h3>LLM Comparative Behavior</h3>
-            <p>Initially, ChatGPT was helpful in setting the SPARQL queries, but then we faced some issues, such as interferences when we made prompts, probably due to the influence of its internal memory, which kept our previous chats and influenced the answers we received. To manage this problem, we tried DeepSeek and Gemini and found better outcomes for our project. Prompting techniques were also very important for obtaining accurate responses when we employed them with different LLMs..</p>
+            <p style="margin-top: 10px;">
+                Initially, ChatGPT was helpful in setting the SPARQL queries, but then we faced some issues, such as interferences 
+                when we made prompts, probably due to the influence of its internal memory, which kept our previous chats and 
+                influenced the answers we received. To manage this problem, we tried DeepSeek and Gemini and found better 
+                outcomes for our project. Prompting techniques were also very important for obtaining accurate responses when 
+                we employed them with different LLMs.
+            </p>
         </section>
     </main>
+
 </body>
 </html>
